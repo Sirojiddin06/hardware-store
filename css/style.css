@@ -1,0 +1,65 @@
+.active{
+    text-decoration-line: underline;
+    text-decoration-color: orange;
+    text-decoration-style: dashed;
+    color: orange;
+}
+
+.contact{
+    padding: 50px 0px;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 16px;
+}
+input{
+    padding: 12px 20px;
+    width: 80%;
+    border: none;
+    border-radius: 12px;
+    color: lightsalmon;
+    /* background: linear-gradient(135deg, red, white, blue); */
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.text-content{
+    width: 40%;
+    margin-top: 30px;
+    color: #fff;
+
+}
+
+footer{
+    background-color: rgba(255, 255, 255,0.2);
+    max-width: 100%;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+footer .logo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.social-medias{
+    display: flex;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+}
+
+.links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+/* 988282625 */

@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/products-adaptive.css">
+</head>
+<body>
+   
+
+    
+    <!-- <nav class="d-none d-xl-flex d-lg-flex d-md-flex w-100 justify-content-center bg-dark py-3">
+        <a href="index.html" class=" mx-5 text-decoration-none text-white"><span>Home</span></a>
+        <a href="#" class="mx-5 text-decoration-none text-white"><span class="active">Products</span></a>
+        <a href="#contact" class="mx-5 text-decoration-none text-white"><span>Contact Us</span></a>
+        <button class="navbar-toggler-icon"></button>
+    </nav> -->
+
+    <header>
+        <nav class="gap-5 d-flex d-xl-flex d-lg-flex d-md-flex w-100 justify-content-center bg-dark py-3">
+            <a href="index.html" class="text-decoration-none text-white"><span>Home</span></a>
+            <a href="#" class="text-decoration-none text-white"><span class="active">Products</span></a>
+            <a href="#contact" class="text-decoration-none text-white"><span>Contact Us</span></a>
+            <!-- <button class="navbar-toggler-icon"></button> -->
+        </nav>
+    </header>
+
+    <style>
+        .card{
+            background-color: rgb(235, 237, 239) !important;
+            border: none;
+            color: #000;
+            font-weight: bold;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* box-shadow: 2px 4px 5px rgb(180, 184, 188); */
+        .card .card-img img{
+            padding: 5px;
+            box-shadow: 0px 0px 20px black;
+            /* box-shadow: -4px -6px 10px #fff; */
+        }
+        body{
+            background-color: rgb(217, 219, 221);
+        }
+
+
+        .active{
+            text-decoration-line: underline;
+            text-decoration-color: orange;
+            text-decoration-style: dashed;
+            color: orange;
+        }
+
+        
+        /* .btn{
+            color: rgb(231, 0, 173) !important;
+            background-color: rgb(75, 0, 205);
+            outline-color: rgb(75, 0, 205) !important;
+        } */
+
+
+</style>
+
+
+    <main id="all">
+
+        <br>
+    <div class="container w-100 d-flex filter justify-content-center">
+        <span class="btn btn-outline-primary" onclick="allShow()">All</span>
+        <span class="btn btn-outline-primary" onclick="kitchenShow()">Kitchen</span>
+        <span class="btn btn-outline-primary" onclick="livingRoomShow()">Living room</span>
+        <span class="btn btn-outline-primary" onclick="homeShow()">Home</span>
+    </div>
+    <br><br>
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/1.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/4.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/7.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/10.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/12.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/16.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/21.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/24.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/27.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/30.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/34.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/36.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/40.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/42.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/50.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap">
+
+            <article class="d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/53.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/56.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/45.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+        </section>
+
+
+
+
+
+        
+
+    </main>
+
+
+
+
+    
+<!-- Kitchen -->
+
+
+<main class="d-none" id="kitchen">
+        
+    <br>
+    <div class="container w-25  justify-content-between">
+        <span class="btn btn-outline-primary" onclick="allShow()">All</span>
+        <span class="btn btn-outline-primary" onclick="kitchenShow()">Kitchen</span>
+        <span class="btn btn-outline-primary" onclick="livingRoomShow()">Living room</span>
+        <span class="btn btn-outline-primary" onclick="homeShow()">Home</span>
+    </div>
+    <br>
+    <br>
+        <section class="d-flex my-3 justify-content-around flex-wrap"   id="products">
+
+            <article class="right d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/1.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 200TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="t_p card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/3.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 150TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="hidden card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/7.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+        </section>
+
+
+
+
+        <section class="d-flex my-3 justify-content-around flex-wrap" >
+
+            <article class="right d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/10.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 200TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                        explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="t_p card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/24.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 150TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                        explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="hidden card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Kitchen
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/52.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                        explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+        </section>
+
+        <br>
+        <br>
+        <!-- <hr> -->
+
+<br><br>
+
+<!-- <p id="tet" style="font-size: 28px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio aliquid dolorem minus similique ipsam at quo illo sit natus. At, ad odio animi porro tenetur dolores delectus nihil voluptatibus accusantium. Iste id ex incidunt vel doloribus accusamus beatae, ipsum nobis mollitia, sint unde voluptatum, optio soluta dolorem ut pariatur.</p>
+<p style="font-size: 26px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam mollitia, eveniet sequi eos officia quas voluptate temporibus, libero similique, enim illum ad officiis. Dignissimos, quaerat. Adipisci incidunt deleniti tempora.</p>
+<p style="font-size: 24px; text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum aut soluta dicta? Vero, obcaecati. Voluptatibus id hic optio.</p> -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+<!-- Living room -->
+
+
+<main class="d-none" id="living-room">
+        
+    <br>
+    <div class="container w-25  justify-content-between">
+        <span class="btn btn-outline-primary" onclick="allShow()">All</span>
+        <span class="btn btn-outline-primary" onclick="kitchenShow()">Kitchen</span>
+        <span class="btn btn-outline-primary" onclick="livingRoomShow()">Living room</span>
+        <span class="btn btn-outline-primary" onclick="homeShow()">Home</span>
+    </div>
+    <br>
+    <br>
+        <section class="d-flex my-3 justify-content-around flex-wrap"   id="products">
+
+            <article class="right d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/34.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 200TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="t_p card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/30.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 150TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="hidden card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Living room
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/45.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+        </section>
+
+
+
+        <br>
+        <br>
+        <!-- <hr> -->
+
+<br><br>
+
+<!-- <p id="tet" style="font-size: 28px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio aliquid dolorem minus similique ipsam at quo illo sit natus. At, ad odio animi porro tenetur dolores delectus nihil voluptatibus accusantium. Iste id ex incidunt vel doloribus accusamus beatae, ipsum nobis mollitia, sint unde voluptatum, optio soluta dolorem ut pariatur.</p>
+<p style="font-size: 26px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam mollitia, eveniet sequi eos officia quas voluptate temporibus, libero similique, enim illum ad officiis. Dignissimos, quaerat. Adipisci incidunt deleniti tempora.</p>
+<p style="font-size: 24px; text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum aut soluta dicta? Vero, obcaecati. Voluptatibus id hic optio.</p> -->
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Home -->
+
+
+<main class="d-none" id="home">
+        
+    <br>
+    <div class="container w-25  justify-content-between">
+        <span class="btn btn-outline-primary" onclick="allShow()">All</span>
+        <span class="btn btn-outline-primary" onclick="kitchenShow()">Kitchen</span>
+        <span class="btn btn-outline-primary" onclick="livingRoomShow()">Living room</span>
+        <span class="btn btn-outline-primary" onclick="homeShow()">Home</span>
+    </div>
+    <br>
+    <br>
+        <section class="d-flex my-3 justify-content-around flex-wrap"   id="products">
+
+            <article class="right d-flex col align-items-center card my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                <!-- <div class="card-img d-flex border overflow-hidden carousel justify-content-center"> -->
+                    <!-- <button class="carousel-control-next">next</button>
+                    <button class="carousel-control-prev">prev</button> -->
+                    <img src="img/36.png" class="col-8"  alt="img">
+                    <!-- <img src="img/3.png" class="col-8 carousel-item-start"  alt="img">
+                    <img src="img/1.png" class="col-8 carousel-item-prev"  alt="img">
+                    <img src="img/10.png" class="col-8 carousel-item-next"  alt="img">
+                    <img src="img/8.png" class="col-8 carousel-item-end"  alt="img"> -->
+                    
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 200TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="t_p card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/40.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 150TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+            <article class="hidden card d-flex align-items-center my-3 col-lg-3 col-xl-3 col-xxl-3 col-md-3 col-sm-12">
+                <div class="card-header col-8 text-center">
+                    Home
+                </div>
+                <div class="card-img d-flex justify-content-center">
+                    <img src="img/42.png" class="col-8" alt="img">
+                </div>
+                <div class="card-body col-8">
+                    <p>Размер: 5kg <br>Цена: 1500TJS <br></p>
+                    <span class="btn btn-outline-primary" onclick="order()">Заказать</span>
+                    <span class="spinner-grow" style="position: absolute; top: 0px; left: 0px;"></span>
+                    <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Quaerat voluptates consequatur quas quod molestiae
+                         explicabo quasi.
+                    </p> -->
+                </div>
+            </article>
+
+        </section>
+
+        <br>
+        <br>
+        <!-- <hr> -->
+
+<br><br>
+
+<!-- <p id="tet" style="font-size: 28px; text-align: justify;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi distinctio aliquid dolorem minus similique ipsam at quo illo sit natus. At, ad odio animi porro tenetur dolores delectus nihil voluptatibus accusantium. Iste id ex incidunt vel doloribus accusamus beatae, ipsum nobis mollitia, sint unde voluptatum, optio soluta dolorem ut pariatur.</p>
+<p style="font-size: 26px; text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam mollitia, eveniet sequi eos officia quas voluptate temporibus, libero similique, enim illum ad officiis. Dignissimos, quaerat. Adipisci incidunt deleniti tempora.</p>
+<p style="font-size: 24px; text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit voluptatum aut soluta dicta? Vero, obcaecati. Voluptatibus id hic optio.</p> -->
+    </main>
+
+
+
+
+
+<style>
+    .container1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+        margin: auto;
+    }
+    .contact{
+            display: flex;
+            padding: 50px 0px;
+            flex-direction: column;
+            gap: 20px;
+            width: 40%;
+            background-color: rgba(0, 0, 0, 0.85);
+            align-items: center;
+            justify-content: space-around;
+            border-radius: 16px;
+        }
+        input{
+            padding: 12px 20px;
+            width: 80%;
+            border: none;
+            border-radius: 12px;
+            color: lightsalmon;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .text-content{
+            width: 40%;
+            margin-top: 100px;
+        }
+</style>
+
+
+
+
+
+
+
+    <form action="mailto:sirojiddinmirahmad@gmail.com" method="post">
+        <div class="container d-flex justify-content-center gap-5 footer">
+            <div class="text-content">
+                <h1 style="font-size: 64px;">Contact us for the service you want to use.</h1>
+            </div>
+            <div id="contact" class="contact d-flex gap-3">
+                <input type="text" placeholder="First name" required>
+                <input type="text" placeholder="Last name">
+                <input type="number" placeholder="Phone number" required>
+                <input type="email" placeholder="E-mail">
+                <textarea name="text" placeholder="message" id="text"></textarea>
+                <button type="submit" class="btn btn-outline-light">Submit</button>
+            </div>
+        </div>
+    </form>
+    <!-- <img src="img/about.png" style="width: 80%; height: 400px; margin-left: 150px;" alt="goods"> -->
+
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
